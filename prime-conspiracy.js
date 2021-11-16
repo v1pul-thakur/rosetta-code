@@ -16,7 +16,7 @@ console.log(isPrime(13), isPrime(47));
 count = 2;
 primes = [];
 nOP = 0;
-while (nOP <= 10000000) {
+while (nOP <= 10000) {
 	if (isPrime(count)) {
 		console.log(nOP);
 		primes.push(count);
@@ -48,5 +48,5 @@ console.log(transitions);
 // showing frequency of the transitions in the percentage.
 
 for (let key in transitions) {
-	console.log( key, transitions[key], (transitions[key]/nOP)*100, '%');
+	console.log(key,'\t', 'Frequency:', transitions[key],'\n\t', 'Percentage:', (transitions[key]/nOP)*100, '%');
 }
